@@ -1,0 +1,255 @@
+.patrocinantes,
+.patrocinantes:before,
+.patrocinantes:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    position: relative;
+}
+
+.patrocinios {
+    background: #000;
+    box-sizing: border-box;
+    font-size: 1rem;
+    color: #000;
+}
+
+.williams {
+    width: 100%;
+    height: auto;
+}
+
+.mclaren {
+    width: 100%;
+    height: auto;
+}
+
+.rofgo {
+    width: 100%;
+    height: auto;
+}
+
+.tag-heuer {
+    width: 50%;
+    height: auto;
+}
+
+.everratti {
+    width: 80% !important;
+    height: auto !important;
+}
+
+.indra {
+    width: 100%;
+    height: auto;
+}
+
+.fuel-retail {
+    width: 100%;
+    height: auto;
+}
+
+.go-top {
+    z-index: 1;
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    text-decoration: none;
+    color: white;
+    background-color: #FF6318;
+    color: #002777;
+    font-size: 20px;
+    padding: 1em;
+    display: none;
+}
+
+.go-top:hover {
+    background-color: #B8D9EC;
+    color: #FF6318;
+}
+
+@media screen and (min-width: 500px) {
+    .socios>.grupo-socios {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .figura-socio {
+        background: #eee;
+        width: calc(50% + 1px);
+        height: 100vh;
+        margin: 0 auto 10vh 0;
+        position: sticky;
+        top: 0;
+        overflow: hidden;
+        box-shadow: 4px -4px 8px rgba(0, 0, 0, .4);
+    }
+
+    .williams {
+        width: 70% !important;
+        height: auto !important;
+    }
+
+    .mclaren {
+        width: 70% !important;
+        height: auto !important;
+    }
+
+    .rofgo {
+        width: 60% !important;
+        height: auto !important;
+    }
+
+    .rofgo-video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: bottom !important;
+    }
+
+    .tag-heuer {
+        width: 40% !important;
+        height: auto !important;
+    }
+
+    .everratti {
+        width: 70% !important;
+        height: auto !important;
+    }
+
+    .indra {
+        width: 40% !important;
+        height: auto !important;
+    }
+
+    .fuel-retail {
+        width: 40% !important;
+        height: auto !important;
+    }
+
+    .figura-socio:nth-of-type(2n)::after {
+        right: 45%;
+        left: 5vmin;
+    }
+
+    .seccion-socio {
+        background: #e5e5e5;
+        width: calc(50% + 1px);
+        height: 100vh;
+        margin: 0 0 10vh auto;
+        position: sticky;
+        top: 0;
+        overflow: hidden;
+        padding: 5vmin;
+        box-shadow: -4px -4px 8px rgba(0, 0, 0, .4);
+    }
+
+    .figura-socio:nth-of-type(1),
+    .seccion-socio:nth-of-type(1) {
+        margin: 0 0 10vh 0;
+        width: 50%;
+    }
+
+    .figura-socio:nth-of-type(2n) {
+        margin: 0 0 10vh auto;
+        box-shadow: -4px -4px 8px rgba(0, 0, 0, .4);
+    }
+
+    .seccion-socio:nth-of-type(2n) {
+        margin: 0 auto 10vh 0;
+        box-shadow: 4px -4px 8px rgba(0, 0, 0, .4);
+    }
+
+    .figura-socio:last-of-type,
+    .seccion-socio:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .seccion-socio::before {
+        background: inherit;
+        z-index: 1;
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 7vmin;
+        height: 7vmin;
+        transform: translate(calc(-50% + 1px), -50%) rotate(-45deg);
+        clip-path: polygon(-15% -15%, 110% 0%, 0% 110%);
+        box-shadow: -4px -2px 8px rgba(0, 0, 0, .4);
+        border-radius: 1.5vmin 0 0 0;
+    }
+
+    .seccion-socio:nth-of-type(2n)::before {
+        left: auto;
+        right: 0;
+        transform: translate(calc(50% - 1px), -50%) rotate(-45deg) scale(-1);
+    }
+
+
+    .seccion-socio:nth-of-type(2n):after {
+        right: 5vmin;
+        left: 45%;
+    }
+
+    .video-socio {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .figura-socio .imagen-socio {
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .seccion-socio>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        padding: 1rem;
+    }
+
+    .titulo-socio,
+    .subtitulo-socio {
+        margin: 10%;
+        font-size: calc(5vmin + 3vmax);
+        text-align: center;
+        font-weight: 700;
+        line-height: 1;
+        word-spacing: .5rem;
+    }
+
+    .logo-socio {
+        width: 100%;
+        height: auto !important;
+        padding-top: 10%;
+    }
+
+    .parrafo-socio {
+        text-align: right;
+        width: 100%;
+        font-weight: 400;
+        font-style: italic;
+        font-size: calc(1.5vmin + 1.75vmax);
+        margin-bottom: 5%;
+    }
+
+    .enlace-socio {
+        color: transparent;
+        -webkit-text-stroke: 2px #212121;
+        text-decoration: none;
+        font-weight: 900;
+        letter-spacing: 2px;
+    }
+
+    .enlace-socio:hover,
+    .enlace-socio:focus {
+        -webkit-text-stroke: 1px #999;
+    }
+}

@@ -1,0 +1,205 @@
+.hydraulic-general {
+    /* font-family: "Open Sans", sans-serif; */
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.enlace-hydraulic {
+    text-decoration: none;
+    text-align: center;
+}
+
+.title-hydraulic {
+    font-weight: 800;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 100vh;
+}
+
+.second-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 100vh;
+}
+
+.split {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: overlay;
+}
+
+.second-split {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: overlay;
+}
+
+/* Hovers */
+
+/* Primer Split Hover */
+
+.left-hydraulic:hover {
+    width: 150%;
+    height: 100vh;
+    transform: scale(1.0);
+}
+
+.right-hydraulic:hover {
+    width: 150%;
+    height: 100vh;
+    transform: scale(1.0);
+}
+
+.central-hydraulic:hover {
+    width: 150%;
+    height: 100vh;
+    transform: scale(1.0);
+}
+
+/* Fin Hovers */
+
+/* Splits */
+
+/* Primer Split */
+
+.left-hydraulic {
+    background-image: url("../../../../public/images/productos/Hidraulico/hydraulic-harmony-presentacion.webp");
+    width: 100%;
+    height: 100vh;
+}
+
+.right-hydraulic {
+    background-image: url("../../../../public/images/productos/Hidraulico/hydraulic-harmony-ficha.webp");
+    width: 100%;
+    height: 100vh;
+}
+
+.central-hydraulic {
+    background-image: url("../../../../public/images/productos/Hidraulico/hydraulic-harmony.webp");
+    width: 100%;
+    height: 100vh;
+}
+
+/* Fin Splits */
+
+@media (min-width: 600px) {
+    .title-hydraulic {
+        font-size: 2rem;
+    }
+
+    .main {
+        flex-direction: row;
+    }
+
+    .second-main {
+        flex-direction: row;
+    }
+
+    .split {
+        width: 50% !important;
+        transition: width 1s ease;
+    }
+
+    .second-split {
+        width: 50%;
+        transition: width 1s ease;
+    }
+
+    .hover-left .left {
+        width: 80%;
+    }
+
+    .hover-left .right {
+        width: 80%;
+    }
+
+    .hover-left .central {
+        width: 20%;
+    }
+
+    .hover-right .left {
+        width: 80%;
+    }
+
+    .hover-right .right {
+        width: 80%;
+    }
+
+    .hover-right .central {
+        width: 20%;
+    }
+
+    .hover-central .central {
+        width: 80%;
+    }
+
+    .hover-central .left {
+        width: 20%;
+    }
+
+    .hover-central .right {
+        width: 20%;
+    }
+
+    /* segundo hover */
+
+    .hover-second-left .left {
+        width: 80%;
+    }
+
+    .hover-second-left .right {
+        width: 80%;
+    }
+
+    .hover-second-left .central {
+        width: 20%;
+    }
+
+    .hover-second-right .left {
+        width: 80%;
+    }
+
+    .hover-second-right .right {
+        width: 80%;
+    }
+
+    .hover-second-right .central {
+        width: 20%;
+    }
+
+    .hover-second-central .central {
+        width: 80%;
+    }
+
+    .hover-second-central .left {
+        width: 20%;
+    }
+
+    .hover-second-central .right {
+        width: 20%;
+    }
+}

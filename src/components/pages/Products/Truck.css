@@ -1,0 +1,305 @@
+.truck-general {
+    /* font-family: "Open Sans", sans-serif; */
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.enlace-truck {
+    text-decoration: none;
+    text-align: center;
+}
+
+.title-truck {
+    font-weight: 800;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 100vh;
+}
+
+.second-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 100vh;
+}
+
+.split {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: overlay;
+}
+
+.second-split {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: overlay;
+}
+
+/* Hovers */
+
+/* Primer Split Hover */
+
+.left-truck:hover {
+    width: 150%;
+    height: 100vh;
+    transform: scale(1.0);
+}
+
+.right-truck:hover {
+    width: 150%;
+    height: 100vh;
+    transform: scale(1.0);
+}
+
+.central-truck:hover {
+    width: 150%;
+    height: 100vh;
+    transform: scale(1.0);
+}
+
+/* Segundo Split Hover */
+
+.second-left-truck:hover {
+    width: 150%;
+    height: 100vh;
+    transform: scale(1.0);
+}
+
+.second-right-truck:hover {
+    width: 150%;
+    height: 100vh;
+    transform: scale(1.0);
+}
+
+.second-central-truck:hover {
+    width: 150%;
+    height: 100vh;
+    transform: scale(1.0);
+}
+
+/* Tercer Split Hover */
+
+.third-left-truck:hover {
+    width: 150%;
+    height: 100vh;
+    transform: scale(1.0);
+}
+
+.third-right-truck:hover {
+    width: 150%;
+    height: 100vh;
+    transform: scale(1.0);
+}
+
+.third-central-truck:hover {
+    width: 150%;
+    height: 100vh;
+    transform: scale(1.0);
+}
+
+/* Cuarto Split Hover */
+
+.fourth-left-truck:hover {
+    width: 150%;
+    height: 100vh;
+    transform: scale(1.0);
+}
+
+.fourth-right-truck:hover {
+    width: 150%;
+    height: 100vh;
+    transform: scale(1.0);
+}
+
+.fourth-central-truck:hover {
+    width: 150%;
+    height: 100vh;
+    transform: scale(1.0);
+}
+
+/* Fin Hovers */
+
+/* Splits */
+
+/* Primer Split */
+
+.left-truck {
+    background-image: url("../../../../public/images/productos/Diesel_motores_camion/diesel-50-mineral-presentacion.webp");
+    width: 100%;
+    height: 100vh;
+}
+
+.right-truck {
+    background-image: url("../../../../public/images/productos/Diesel_motores_camion/diesel-50-mineral-ficha.webp");
+    width: 100%;
+    height: 100vh;
+}
+
+.central-truck {
+    background-image: url("../../../../public/images/productos/Diesel_motores_camion/diesel-50-mineral.webp");
+    width: 100%;
+    height: 100vh;
+}
+
+/* Segundo Split */
+
+.second-left-truck {
+    background-image: url("../../../../public/images/productos/Diesel_motores_camion/diesel-15w-40-mineral-presentacion.webp");
+    width: 100%;
+    height: 100vh;
+}
+
+.second-right-truck {
+    background-image: url("../../../../public/images/productos/Diesel_motores_camion/diesel-15w-40-mineral-ficha.webp");
+    width: 100%;
+    height: 100vh;
+}
+
+.second-central-truck {
+    background-image: url("../../../../public/images/productos/Diesel_motores_camion/diesel-15w-40-mineral.webp");
+    width: 100%;
+    height: 100vh;
+}
+
+/* Tercer Split */
+
+.third-left-truck {
+    background-image: url("../../../../public/images/productos/Diesel_motores_camion/diesel-20w-50-mineral-presentacion.webp");
+    width: 100%;
+    height: 100vh;
+}
+
+.third-right-truck {
+    background-image: url("../../../../public/images/productos/Diesel_motores_camion/diesel-20w-50-mineral-ficha.webp");
+    width: 100%;
+    height: 100vh;
+}
+
+.third-central-truck {
+    background-image: url("../../../../public/images/productos/Diesel_motores_camion/diesel-20w-50-mineral.webp");
+    width: 100%;
+    height: 100vh;
+}
+
+/* Fin Splits */
+
+@media (min-width: 600px) {
+    .title-truck {
+        font-size: 2rem;
+    }
+
+    .main {
+        flex-direction: row;
+    }
+
+    .second-main {
+        flex-direction: row;
+    }
+
+    .split {
+        width: 50% !important;
+        transition: width 1s ease;
+    }
+
+    .second-split {
+        width: 50%;
+        transition: width 1s ease;
+    }
+
+    .hover-left .left {
+        width: 80%;
+    }
+
+    .hover-left .right {
+        width: 80%;
+    }
+
+    .hover-left .central {
+        width: 20%;
+    }
+
+    .hover-right .left {
+        width: 80%;
+    }
+
+    .hover-right .right {
+        width: 80%;
+    }
+
+    .hover-right .central {
+        width: 20%;
+    }
+
+    .hover-central .central {
+        width: 80%;
+    }
+
+    .hover-central .left {
+        width: 20%;
+    }
+
+    .hover-central .right {
+        width: 20%;
+    }
+
+    /* segundo hover */
+
+    .hover-second-left .left {
+        width: 80%;
+    }
+
+    .hover-second-left .right {
+        width: 80%;
+    }
+
+    .hover-second-left .central {
+        width: 20%;
+    }
+
+    .hover-second-right .left {
+        width: 80%;
+    }
+
+    .hover-second-right .right {
+        width: 80%;
+    }
+
+    .hover-second-right .central {
+        width: 20%;
+    }
+
+    .hover-second-central .central {
+        width: 80%;
+    }
+
+    .hover-second-central .left {
+        width: 20%;
+    }
+
+    .hover-second-central .right {
+        width: 20%;
+    }
+}

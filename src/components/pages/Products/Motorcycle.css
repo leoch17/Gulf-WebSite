@@ -1,0 +1,236 @@
+.motorcycle-general {
+    /* font-family: "Open Sans", sans-serif; */
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.enlace-motorcycle {
+    text-decoration: none;
+    text-align: center;
+}
+
+.title-motorcycle {
+    font-weight: 800;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 100vh;
+}
+
+.split {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: overlay;
+}
+
+.second-split {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: overlay;
+}
+
+/* Hovers */
+
+/* Primer Split Hover */
+
+.left-motorcycle:hover {
+    width: 150%;
+    height: 100vh;
+    transform: scale(1.0);
+}
+
+.right-motorcycle:hover {
+    width: 150%;
+    height: 100vh;
+    transform: scale(1.0);
+}
+
+.central-motorcycle:hover {
+    width: 150%;
+    height: 100vh;
+    transform: scale(1.0);
+}
+
+/* Segundo Split Hover */
+
+.second-left-motorcycle:hover {
+    width: 150%;
+    height: 100vh;
+    transform: scale(1.0);
+}
+
+.second-right-motorcycle:hover {
+    width: 150%;
+    height: 100vh;
+    transform: scale(1.0);
+}
+
+.second-central-motorcycle:hover {
+    width: 150%;
+    height: 100vh;
+    transform: scale(1.0);
+}
+
+/* Fin Hovers */
+
+/* Splits */
+
+/* Primer Split */
+
+.left-motorcycle {
+    background-image: url("../../../../public/images/productos/gasolina_motor_moto/10w-40-power-presentacion.webp");
+    width: 100%;
+    height: 100vh;
+}
+
+.right-motorcycle {
+    background-image: url("../../../../public/images/productos/gasolina_motor_moto/10w-40-power-ficha.webp");
+    width: 100%;
+    height: 100vh;
+}
+
+.central-motorcycle {
+    background-image: url("../../../../public/images/productos/gasolina_motor_moto/10w-40-power.webp");
+    width: 100%;
+    height: 100vh;
+}
+
+/* Segundo Split */
+
+.second-left-motorcycle {
+    background-image: url("../../../../public/images/productos/gasolina_motor_moto/20w-50-mineral-pride-presentacion.webp");
+    width: 100%;
+    height: 100vh;
+}
+
+.second-right-motorcycle {
+    background-image: url("../../../../public/images/productos/gasolina_motor_moto/20w-50-mineral-pride-ficha.webp");
+    width: 100%;
+    height: 100vh;
+}
+
+.second-central-motorcycle {
+    background-image: url("../../../../public/images/productos/gasolina_motor_moto/20w-50-mineral-pride.webp");
+    width: 100%;
+    height: 100vh;
+}
+
+/* Fin Splits */
+
+@media (min-width: 600px) {
+    .title-motorcycle {
+        font-size: 2rem;
+    }
+
+    .main {
+        flex-direction: row;
+    }
+
+    .second-main {
+        flex-direction: row;
+    }
+
+    .split {
+        width: 50% !important;
+        transition: width 1s ease;
+    }
+
+    .second-split {
+        width: 50%;
+        transition: width 1s ease;
+    }
+
+    .hover-left .left {
+        width: 80%;
+    }
+
+    .hover-left .right {
+        width: 80%;
+    }
+
+    .hover-left .central {
+        width: 20%;
+    }
+
+    .hover-right .left {
+        width: 80%;
+    }
+
+    .hover-right .right {
+        width: 80%;
+    }
+
+    .hover-right .central {
+        width: 20%;
+    }
+
+    .hover-central .central {
+        width: 80%;
+    }
+
+    .hover-central .left {
+        width: 20%;
+    }
+
+    .hover-central .right {
+        width: 20%;
+    }
+
+    /* segundo hover */
+
+    .hover-second-left .left {
+        width: 80%;
+    }
+
+    .hover-second-left .right {
+        width: 80%;
+    }
+
+    .hover-second-left .central {
+        width: 20%;
+    }
+
+    .hover-second-right .left {
+        width: 80%;
+    }
+
+    .hover-second-right .right {
+        width: 80%;
+    }
+
+    .hover-second-right .central {
+        width: 20%;
+    }
+
+    .hover-second-central .central {
+        width: 80%;
+    }
+
+    .hover-second-central .left {
+        width: 20%;
+    }
+
+    .hover-second-central .right {
+        width: 20%;
+    }
+}
